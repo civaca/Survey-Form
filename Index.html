@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <body>
+        <main>
+            <div id="header">
+                <h1 id="title" >Medical School Survey</h1>
+                <p id="description" >This a survey for medical students and graduates</p>
+            </div>
+            <form id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name" class="personalinfo">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Put your name" required class="personalinfo">
+                    <label id="email-label"for="email" class="personalinfo">Email</label>
+                    <input id="email" name="email" type="email" placeholder="put yor emal" required class="personalinfo">
+                    <label id="number-label" for="number" class="personalinfo">Age</label>
+                    <input id="number" name="number" type="number" placeholder="put your age" min="10" max="99" class="personalinfo">
+                    <div id="gradio" class="checks">
+                        <p>Would you study medicine again?</p>
+                        <label for="yes">yes</label>
+                        <input id="yes" name="yes/no" type="radio" value="yes">
+                        <label for="no">no</label>
+                        <input id="no" name="yes/no" type="radio" value="no">
+                    </div>
+                    <div id="gcheck" class="checks">
+                        <p>Describe your current position</p>
+                        <label for="undergrad">undergrad</label>
+                        <input id="undergrad" name="pos" type="checkbox" value="undergrad">
+                        <label for="posgrad">posgrad</label>
+                        <input id="posgrad" name="pos" type="checkbox" value="posgrad">
+                    </div>
+                    <div id="dpw">
+                        <p>What is your favorite subyect?</p>
+                        <select id="dropdown" name="dropdown" >
+                            <option value="Anatomy" >Anatomy</option>
+                            <option value="Physiology" >Physiology</option>
+                            <option value="PPhysiology" >Physiology</option>
+                            <option value="Biology" >Biology</option>
+                            <option value="Microbiology">Microbiology</option>Microbiology</option>
+                        </select>
+                     </div>
+                     <label for="area">Any additional comment</label>
+                     <textarea id="area" name="area"></textarea>
+                     <label for="submit">Submit</label>
+                     <input id="submit" name="submit" type="submit">
+
+                </fieldset>
+            </form>
+        </main>
+     </body>    
+</html>   
