@@ -70,6 +70,19 @@ textarea{
     font-weight: bolder;
 }
 
+@media (min-width: 768px) {
+    main{
+    margin:2em 06em 2em 06em;
+    font-size: 1.2em;
+ }
+ fieldset{
+     margin:1em;
+ }
+ #submit{
+    height: 40px;
+}
+ }
+
  @media (min-width: 1200px) {
     main{
         margin:2em 15em 2em 17em;     
